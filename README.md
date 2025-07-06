@@ -1,4 +1,4 @@
-# Mobile-App
+# Mobile-Application 
 # AFL Match Recorder (Flutter Web)
 
 This is a Flutter app to record Australian Football League (AFL) matches.
@@ -19,4 +19,6 @@ Developed a mobile application using Flutter for recording and managing Australi
 - Flutter
 - Dart
 - Firebase
+
+- This same project include the code of Android,IOS and prototype of the mobile app of AFL record .
 
