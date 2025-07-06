@@ -20,4 +20,3 @@ Developed a mobile application using Flutter for recording and managing Australi
 - Dart
 - Firebase
 
-![image](https://github.com/user-attachments/assets/545b40d3-bd80-4dc6-bf4e-acd49f14b168)
