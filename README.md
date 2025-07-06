@@ -20,5 +20,5 @@ Developed a mobile application using Flutter for recording and managing Australi
 - Dart
 - Firebase
 
-- This same project include the code of Android,IOS and prototype of the mobile app of AFL record .
+- This same project include the code of Android,IOS and prototype of the mobile app of AFL record inside assignment upload branch.
 
