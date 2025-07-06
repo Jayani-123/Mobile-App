@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679301881723",
+    "project_id": "my-flutter-afl",
+    "storage_bucket": "my-flutter-afl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679301881723:android:18b893c1ecb09b1ba7e7de",
+        "android_client_info": {
+          "package_name": "au.utas.edu.jayanie.aflapp.afl_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClH3DobFo70Nm04b8ske8vYujA-bmgyDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
