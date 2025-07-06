@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AFL" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorWhite">@color/white</item>
+        <item name="bluedark">@color/bluedark</item>
+        <item name="android:windowBackground">@color/bluedark</item>
+    </style>
+
+    <style name="Theme.AFL" parent="Base.Theme.AFL" />
+
+</resources>

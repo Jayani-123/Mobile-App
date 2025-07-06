@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="bluedark"> #00529B</color>
+    <color name="my_light_primary">#FF6200EE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#A6A4A4</color>
+    <color name="highlight_yellow">#FFFF00</color>
+</resources>

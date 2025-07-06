@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Header -->
+
+        <!-- Team 1 Column -->
+        <TextView
+            android:id="@+id/team1Label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/actionLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Action Column -->
+        <TextView
+            android:id="@+id/actionLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/timeLabel"
+            app:layout_constraintStart_toEndOf="@+id/team1Label"
+            app:layout_constraintTop_toTopOf="@+id/team1Label" />
+
+        <!-- Time Column -->
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/team2Label"
+            app:layout_constraintStart_toEndOf="@+id/actionLabel"
+            app:layout_constraintTop_toTopOf="@+id/team1Label" />
+
+        <!-- Team 2 Column -->
+        <TextView
+            android:id="@+id/team2Label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeLabel"
+            app:layout_constraintTop_toTopOf="@+id/team1Label" />
+
+        <!-- RecyclerView for displaying actions -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actionsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/team1Label"
+            tools:listitem="@layout/item_action" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

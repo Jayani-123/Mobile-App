@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98324480948",
+    "project_id": "afl-app-8c114",
+    "storage_bucket": "afl-app-8c114.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98324480948:android:7b9ef811fcc68ab0d3a8e1",
+        "android_client_info": {
+          "package_name": "au.edu.utas.jayanie.afl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp6ycMovDlAZ10XVizy8cwTue_hChKaYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- WRITE_EXTERNAL_STORAGE is deprecated from Android 10+, use scoped storage -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> <!-- Optional: Add this for reading media if using scoped storage -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- Features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- Autofocus is nice to have but not essential -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" /> <!-- Android 10+ scoped storage permission -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AFL"
+        tools:targetApi="31">
+        <activity
+            android:name=".PlayerStat"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".TeamRank"
+            android:exported="false" />
+        <activity
+            android:name=".ComparePlayers"
+            android:exported="false" />
+        <activity
+            android:name=".Score"
+            android:exported="false"
+            android:theme="@style/Theme.AFL" />
+        <activity
+            android:name=".ActionList"
+            android:exported="false"
+            android:theme="@style/Theme.AFL" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".RecordMatch"
+            android:exported="false" />
+        <activity
+            android:name=".MatchDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddPlayerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".CreatePlayer"
+            android:exported="false" />
+        <activity
+            android:name=".CreateMatch"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

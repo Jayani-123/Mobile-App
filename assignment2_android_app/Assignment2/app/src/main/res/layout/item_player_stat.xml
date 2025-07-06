@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/playerStatRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Player Number -->
+        <TextView
+            android:id="@+id/playerNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@android:color/black"
+            tools:text="23" />
+
+        <!-- Player Name -->
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Player Name"
+            android:textColor="@android:color/black"
+            tools:text="John Smith" />
+
+        <!-- Goals -->
+        <TextView
+            android:id="@+id/playerGoal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="G"
+            android:textColor="@android:color/black"
+            tools:text="2" />
+
+        <!-- Behinds -->
+        <TextView
+            android:id="@+id/playerBehind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@android:color/black"
+            tools:text="1" />
+
+        <!-- Kicks -->
+        <TextView
+            android:id="@+id/playerKick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="K"
+            android:textColor="@android:color/black"
+            tools:text="12" />
+
+        <!-- Handballs -->
+        <TextView
+            android:id="@+id/playerHandball"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="H"
+            android:textColor="@android:color/black"
+            tools:text="8" />
+
+        <!-- Marks -->
+        <TextView
+            android:id="@+id/playerMark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="M"
+            android:textColor="@android:color/black"
+            tools:text="5" />
+
+        <!-- Tackles -->
+        <TextView
+            android:id="@+id/playerTackles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="T"
+            android:textColor="@android:color/black"
+            tools:text="3" />
+
+        <!-- Disposals -->
+        <TextView
+            android:id="@+id/playerDisposal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@android:color/black"
+            tools:text="20" />
+    </LinearLayout>
+
+    <!-- Divider line between items -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/playerStatRow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

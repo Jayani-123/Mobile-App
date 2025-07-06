@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AFL</string>
+    <string name="name">Name</string>
+    <string name="add_player" />
+
+    <string-array name="positions">
+        <item>Forward</item>
+        <item>Midfield</item>
+        <item>Defender</item>
+        <item>Ruck</item>
+        <item>Goalkeeper</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="rank_content_description">Rank %1$d</string>
+    <string name="score_content_description">%1$d points</string>
+    <string name="team_rankings_list">Team rankings by score</string>
+    <string name="add_player_description">add_player_description</string>
+    <string name="add_player_recycler_view">add_player_recycle_view</string>
+
+    <string-array name="teams">
+        <item>Team 1</item>
+        <item>Team 2</item>
+    </string-array>
+    <string name="underline_text"><u>Click me</u></string>
+</resources>
