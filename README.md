@@ -14,3 +14,5 @@ This is a Flutter app to record Australian Football League (AFL) matches.
 - Flutter
 - Dart
 - Firebase (optional)
+
+![image](https://github.com/user-attachments/assets/545b40d3-bd80-4dc6-bf4e-acd49f14b168)
